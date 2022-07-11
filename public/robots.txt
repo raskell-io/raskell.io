@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://raskell-io.github.io/raskell-io-site/sitemap.xml
