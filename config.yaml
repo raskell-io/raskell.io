@@ -1,6 +1,6 @@
-baseurl: "https://example.com"
+baseurl: "https://raskell-io.github.io"
 languageCode: "en-us"
-title: "Hugo Tania"
+title: "raskell.io"
 theme: "hugo-tania"
 paginate: 6
 
@@ -17,8 +17,8 @@ params:
   # Default to true
   enableFootnotes: true
   
-  siteName: "Hugo Tania is Amazing"
-  siteDesc: "Hugo is Absurdly Fast!"
+  siteName: "Raskell"
+  siteDesc: "Open source projects in Elixir, Haskell, Rust and more!"
   author: "Hugo Tania"
 
   colorScheme:
@@ -51,15 +51,7 @@ params:
   
   # Comments settings
   comments:
-    enabled: true
-    provider: giscus
-
-    giscus:
-      repo: WingLim/hugo-tania
-      id: MDEwOlJlcG9zaXRvcnkzMTYyNjQzMDc=
-      category:
-        name: Comments
-        id: DIC_kwDOEtnPc84B_WKP
+    enabled: false
 
 menu:
   header:
