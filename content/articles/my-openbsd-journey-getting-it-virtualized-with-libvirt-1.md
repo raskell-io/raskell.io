@@ -13,29 +13,36 @@ categories:
 
 ## Void Linux as my daily driver
 
-Void Linux and OpenBSD are both Unix-like operating systems, but they have some differences. Here are a few similarities and differences between the two:
+Around six months ago, I decided to ditch my long in the tooth Arch-based setup on my belovest Thinkpad X1 Carbon. I've been very loyal over the years, and almost came to belive that Arch will be a constant in my adult life. While I kept up with upcoming technologies, I somehow lost track of the ever so diversifying landscape of Linux distributions. It took me a while of constantly coming across a generically named reference to what seemed to be yet another Linux distribution. That outwardly generic sounding name, Void Linux, kept poking my curiosity by being like Arch Linux in the old days, while sharing some substantial DNA with the BSD operating systems. Yet, that's another story I might tell another day, but to remain brief, the BSDs, in particular the infamous OpenBSD with its quite infamous lead developer Theo De Raadt, always were what I considered the endgame. The holy grail of Unix operating systems, so did I think over the decades, FreeBSD, NetBSD and OpenBSD, have always been on my personal radar and I had to earn the capacity to be able to properly put them at use one day. Last year, when I made the (almost painless) switch from Arch Linux to Void Linux, the simplicity and especially the barebone experience of Void reignited the fascination and the admiration I always had for the BSD operating systems and their philosophy.
 
-Similarities:
+While I could write (and definitely will in the near future) about how my journey onto Void Linux and how it has been so far, I preferred to write down, in some like diary, and document every step on how one can approach and ultimately use OpenBSD in 2023. Big disclaimer, I've yet to install OpenBSD on some baremetal server I ordered some days ago, but dabbled around in the meantime with OS-level virtualization in order to get it running. That's what brings me to _libvirt_ and my surprise to learn that I wouldn't need some full-fledged virtualization solution like the ones offered by VirtualBox or VMWare to efficiently run a virtualized OpenBSD machine.
 
-- Both are open-source operating systems.
+### From Void to OpenBSD
+
+Before I tell you more about the history of how things went down, let me give you some basic notions about both Void Linux, being one of many Linux distributions representing them all as it ended up being my distribution of choice, and OpenBSD. As already mentioned earlier, Void Linux and OpenBSD are both Unix-like operating systems, but they feature enough differences to make them noteworthy. Here are a few similarities and differences between the two:
+
+What is similar:
+
+- Both are free and open-source operating systems.
 - Both use a package manager for software management. Void Linux uses XBPS, while OpenBSD uses pkg_add.
 - Both prioritize security and stability in their development and design.
+- Both feature a version control based package repository, meaning that changes in build definition are managed by pull requests from users.
 
-Differences:
+What is different:
 
 - License: Void Linux is licensed under the MIT License, while OpenBSD is licensed under the ISC License.
 - Philosophy: OpenBSD prioritizes security and privacy, while Void Linux prioritizes simplicity and modularity.
 - Package Management: Void Linux uses a binary package manager (XBPS), while OpenBSD uses a source-based package manager (pkg_add).
 - Package Repository: Void Linux has a large and diverse repository, while OpenBSD has a smaller and more curated repository.
-- Init System: Void Linux uses runit as its init system, while OpenBSD uses rc.
+- Init System: Void Linux uses runit as its init system, while OpenBSD uses rc. None uses the infamous systemd init system.
 
-## Why OpenBSD
+## What is OpenBSD in a nutshell
 
 OpenBSD is a free and open-source operating system that focuses on security, standardization, and robustness. It is based on the Berkeley Software Distribution (BSD) Unix operating system and is developed by a global community of volunteers. OpenBSD aims to provide a secure platform for both personal and enterprise use by implementing strong security features, including access control mechanisms, encryption, and auditing.
 
 Theo de Raadt is the founder and lead developer of OpenBSD. His main objective with OpenBSD is to create a secure operating system that is free from backdoors, vulnerabilities, and other security weaknesses. He is committed to auditing the source code of the operating system and third-party software included with it, to identify and remove any potential security risks. De Raadt is also dedicated to improving the overall quality of the codebase and ensuring compatibility with a wide range of hardware and software.
 
-### Virtualization
+### Virtualization with libvirt
 
 libvirt is an open-source virtualization management library that provides a simple and unified API for managing virtualization technologies, including KVM, QEMU, Xen, and others. It aims to simplify the process of creating, managing, and migrating virtual machines, storage, and networks, and to make it easier for administrators to manage virtual environments.
 
@@ -49,21 +56,25 @@ To virtualize an operating system ISO like OpenBSD with libvirt, you need to fol
 6. Once the installation is complete, you can configure the virtual network, storage, and other settings as required.
 7. Finally, you can use the libvirt API or the command line to manage and control the virtual machine, including starting, stopping, migrating, and snapshotting.
 
-Installed dependencies
+### Step-by-step guide
+
+Let's first install the `libvirt` package and some related packages which we need in order to connect via VNC. The VNC will provide us with the possibility to use the graphical interface of the running OpenBSD instance.
 
 ```bash
-❯ sudo xbps-install -S dbus qemu libvirt virt-manager virt-viewer tigervnc
+$ sudo xbps-install -S dbus qemu libvirt virt-manager virt-viewer tigervnc
 ```
+
+Now, we need to add our user, in my case `raskell`, to the `libvirt` group which got simultanously created with the installation of libvirt.
 
 ```bash
-❯ sudo usermod -aG libvirt zara
+$ sudo usermod -aG libvirt raskell
 ```
 
-Got ISO
+OpenBSD features a release cycle of six months. We would need to update our system every six month to keep up with the latest packages. During a given release, only security and bug fix patches are applied to the curated packages maintained by pkg_add. Therefore, in February 2023, we're using the OpenBSD 7.2 release version. As I'm living in Switzerland, I chose to pull the iso image from a Swiss mirror, in this case from `mirror.ungleich.ch/pub/OpenBSD` (check what mirror is closest to you to get the best download rate).
 
 ```bash
 # cd /var/lib/libvirt/boot/
-sudo wget https://mirror.ungleich.ch/pub/OpenBSD/7.2/amd64/install72.iso
+# sudo wget https://mirror.ungleich.ch/pub/OpenBSD/7.2/amd64/install72.iso
 --2023-01-12 20:48:15--  https://mirror.ungleich.ch/pub/OpenBSD/7.2/amd64/install72.iso
 Resolving mirror.ungleich.ch (mirror.ungleich.ch)... 2a0a:e5c0:2:2:400:c8ff:fe68:bef3, 185.203.114.135
 Connecting to mirror.ungleich.ch (mirror.ungleich.ch)|2a0a:e5c0:2:2:400:c8ff:fe68:bef3|:443... connected.
@@ -90,10 +101,10 @@ SHA256.1                             100%[======================================
 # rm /tmp/x
 ```
 
-Installed ISO
+Before we can start the virtualization server and get running our OpenBSD instance, we need to define the configuraiton on how to virtualize and ultimately boot the system with. This is done with `virt-install`. Noteworthy here is that we QEMU as our emulation solution of choice, we allocate up to 4GB of RAM and 4 CPU cores to the machine.
 
 ```bash
-sudo virt-install \
+$ sudo virt-install \
       --name=openbsd \
       --virt-type=qemu \
       --memory=2048,maxmemory=4096 \
@@ -106,9 +117,7 @@ sudo virt-install \
       --disk path=/var/lib/libvirt/images/openbsd.qcow2,size=40,bus=virtio,format=qcow2
 ```
 
-Use VNC
-
-**`virsh`** is a command-line interface tool for managing virtualization environments created with libvirt. It allows administrators to manage virtual machines, storage pools, and network interfaces, as well as other virtualization components, from the command line.
+Once, it is up and running, we can use a vnc solution to connect to the running machine. In this case, I chose `virsh` to do the job. virsh is a command-line interface tool for managing virtualization environments created with libvirt. It allows us to manage virtual machines, storage pools, and network interfaces, as well as other virtualization components, from the command line.
 
 To establish a VNC connection with a running libvirt virtualized OpenBSD instance, you can use the following steps:
 
@@ -124,13 +133,12 @@ $ virsh dumpxml openbsd | grep vnc
 <graphics type='vnc' port='5900' autoport='yes' listen='127.0.0.1'>
 ```
 
-- open vncviewer (provided by package tigernvc)
-
-Install OpenBSD in VNC window
-
-After first install batch
+Like I did, most of you would like to interact with a graphical interface such as with X11. For that, we yet another tool, a so-called VNC viewer. A very simple implementation of such a vnc viewer is tigervnc (simply install it with `$ sudo xbps-install -S tigervnc`).
 
 ```bash
-❯ sudo virsh --connect qemu:///system start openbsd
-Domain 'openbsd' startedr
+$ sudo virsh --connect
+qemu:///system start openbsd
+Domain 'openbsd' started
 ```
+
+{tbc}
