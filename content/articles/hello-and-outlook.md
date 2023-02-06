@@ -9,6 +9,8 @@ categories:
 - meta
 ---
 
+![hello-world.png](hello-world.png)
+
 ## Hello world
 
 Welcome to my tech blog! My name is Raffael Schneider and I am excited to share my rumings about the state of tech, open-source, and the life as a software developer with you.
