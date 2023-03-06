@@ -38,7 +38,7 @@ Haskell also incorporates many features from other functional programming langua
 
 Haskell is closely related to the lambda calculus, which is a mathematical notation system for expressing computation. The lambda calculus was developed in the early 20th century by mathematician Alonzo Church as a way to formalize the notion of computability.
 
-The lambda calculus consists of three basic elements: variables, functions, and applications. Variables represent values, functions represent computations, and applications represent the act of applying a function to an argument. For example, the function f(x) = x + 1 could be represented in the lambda calculus as the expression (λx.x + 1).
+The lambda calculus consists of three basic elements: variables, functions, and applications. Variables represent values, functions represent computations, and applications represent the act of applying a function to an argument. For example, the function $ f(x) = x + 1 $ could be represented in the lambda calculus as the expression $ (λx.x + 1) $ .
 
 Haskell was developed in the late 1980s by a group of researchers, including Simon Peyton Jones, Philip Wadler, and others, who were interested in creating a purely functional programming language that was inspired by the lambda calculus. As mentioned above, they named the language after Haskell Curry as a tribute to his contributions to mathematical logic.
 
