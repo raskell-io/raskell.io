@@ -247,8 +247,7 @@ Despite these challenges, there are many reasons to learn and use Haskell. For e
 - Haskell's sophisticated type system can catch many errors at compile time, reducing the potential for bugs. This can lead to more robust and maintainable code.
 - Haskell's focus on purity and immutability can lead to more elegant and concise code that is easier to reason about and test.
 - Haskell is a powerful tool for data analysis, machine learning, and other computational tasks that involve complex algorithms and mathematical models.
-- Haskell is used in industry by companies like Facebook, Google, and Standard Chartered Bank. Learning Haskell can therefore enhance your employability and give you access to interesting job opportunities.
-- Haskell has a small but passionate community of developers who are constantly pushing the boundaries of what is possible with functional programming. This community can provide a valuable source of support and inspiration as you learn and grow as a programmer.
+- Haskell has a small but passionate community of developers who are constantly pushing the boundaries of what is possible with functional programming.
 
 ## Conclusion
 
