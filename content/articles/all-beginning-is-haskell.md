@@ -163,6 +163,52 @@ The concepts of immutability, statelessness, higher-order functions, and lazy ev
 
 All of these concepts are closely related to pure functions, because they help enforce the properties of purity and immutability. By using immutable data structures and stateless functions, we can reduce the potential for side effects and create code that is more predictable and easier to reason about. Higher-order functions and lazy evaluation can also lead to more efficient and maintainable code by creating powerful abstractions and reducing the amount of unnecessary computation.
 
+## Nomad as monad
+
+In a purely functional language like Haskell, functions that produce side effects like input/output, state mutation, and exceptions are generally not considered pure. This is because they have the potential to produce different results for the same input, depending on the context in which they are executed.
+
+To work with these effects in a purely functional way, Haskell uses monads to encapsulate the side effects and provide a way to compose and sequence them in a predictable way. For example, the IO monad is used to represent input/output operations, while the State monad is used to represent stateful computations.
+
+In the case of the IO monad, the monadic structure allows the input/output operations to be performed in a predictable and composable way. The IO monad provides functions like >>= (pronounced "bind") and >> (pronounced "then") that allow input/output operations to be sequenced and composed in a way that ensures their order of execution is well-defined.
+
+Similarly, the State monad provides a way to model stateful computations in a pure way. The State monad allows a function to compute a new state value based on an existing state value, without modifying the existing state value. This allows the state to be propagated through a series of function calls in a predictable and composable way.
+
+Monads are therefore a fundamental concept in Haskell and are used to encapsulate effects, such as input/output or state changes, in a purely functional way. Let's take a look at a simple example that demonstrates the use of a monad in Haskell:
+
+```haskell
+import Control.Monad.State
+
+-- Define a function that uses the State monad to keep track of a counter
+count :: State Int Int
+count = do
+  n <- get
+  put (n + 1)
+  return n
+
+-- Use the count function to increment a counter and retrieve its value
+result :: Int
+result = evalState count 0
+```
+
+In this example, we use the State monad to keep track of a counter. The State monad encapsulates stateful computations in a purely functional way, allowing us to write code that has side effects while still adhering to Haskell's purity and immutability.
+
+The count function uses the State monad to read the current value of the counter, increment it by 1, and return its original value. This is achieved using the get, put, and return functions provided by the State monad.
+
+The result variable uses the evalState function to run the count function with an initial state of 0. This results in the counter being incremented by 1 and its value being returned, which is then assigned to the result variable.
+
+This example demonstrates how monads can be used to encapsulate side effects in a purely functional way, making it easier to reason about and maintain code. The State monad is just one example of a monad in Haskell, and there are many others, such as the IO monad for input/output operations and the Maybe monad for handling optional values.
+
+By using monads, Haskell programmers can write code that has side effects in a way that is consistent with the language's focus on purity and immutability. This can lead to more robust and maintainable software systems that are easier to test and modify over time.
+
+In mathematics, a monad is a structure that describes a certain kind of algebraic operation. Specifically, a monad is a triple (T, η, μ) consisting of:
+
+- A functor T that maps a category C to itself. This functor is often called the "monad functor".
+- A natural transformation η from the identity functor on C to T. This natural transformation is called the "unit" of the monad.
+- A natural transformation μ from T∘T to T. This natural transformation is called the "multiplication" of the monad.
+The monad structure is used in mathematics to describe a wide range of mathematical structures and operations, including algebraic structures like groups, rings, and fields, as well as more abstract structures like topological spaces and sheaves.
+
+In computer science, monads are used as a programming construct that provides a way to encapsulate computation and control side effects in a purely functional way. In this context, a monad is typically defined as a type constructor that provides a way to combine and sequence operations in a way that is both composable and predictable. Monads are often used in functional programming languages like Haskell to model a wide range of effects, including input/output, state, and exceptions.
+
 ## Why everyone should learn a Haskell for a great good
 
 One of the benefits of learning Haskell is that it can help you develop a deeper understanding of programming concepts like recursion, higher-order functions, and lazy evaluation. Haskell's focus on purity and immutability can also help you develop good programming habits that can be applied to other languages.
