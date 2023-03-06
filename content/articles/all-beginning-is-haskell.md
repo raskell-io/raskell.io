@@ -72,7 +72,7 @@ One of the key features of ML that influenced the development of Haskell is its 
 
 Haskell's type system is based on the Hindley-Milner type system, which was first introduced in the ML programming language in the 1970s. The Hindley-Milner type system is a type inference algorithm that can deduce the types of expressions in a program without the need for explicit type annotations. In Haskell, the Hindley-Milner type system has been extended and refined to include additional features such as type classes, higher-kinded types, and generalized algebraic data types. These extensions make Haskell's type system more expressive and flexible than the original Hindley-Milner type system in ML.
 
-Type classes are a key feature of Haskell's type system that allow programmers to define common behavior for a set of types. For example, the Eq type class defines the notion of equality for a given type, while the Ord type class defines the notion of order. Type classes provide a powerful mechanism for creating modular and reusable code.
+Type classes are a key feature of Haskell's type system that allow programmers to define common behavior for a set of types. For example, the `Eq` type class defines the notion of equality for a given type, while the Ord type class defines the notion of order. Type classes provide a powerful mechanism for creating modular and reusable code.
 
 Higher-kinded types are another extension to Haskell's type system that allow for more complex and abstract types. In essence, higher-kinded types are types that take other types as arguments, allowing for a greater degree of generality and abstraction in programming.
 
@@ -258,8 +258,6 @@ The use of pure functions means that code is easier to reason about and test. Pu
 
 Haskell's emphasis on immutability also contributes to code maintainability. Immutable data structures are less prone to bugs and can be easier to reason about than mutable ones. Immutable data structures also encourage a functional style of programming, which can lead to more concise and elegant code.
 
-Finally, Haskell's focus on easy refactoring makes it easier to maintain code over time. Refactoring is the process of modifying existing code to improve its structure or performance. In Haskell, refactoring is often as simple as modifying a function's implementation without changing its type signature. This can make it easier to update code to meet changing requirements, fix bugs, or improve performance.
-
-Overall, Haskell's focus on functional programming, immutability, and easy refactoring makes it an ideal choice for building maintainable code. By reducing the potential for bugs and making it easier to modify code over time, Haskell can help developers create software that is robust and easy to maintain.
+Ultimately, Haskell's focus on functional programming, immutability, and easy refactoring makes it an ideal choice for building maintainable code. By reducing the potential for bugs and making it easier to modify code over time, Haskell can help developers create software that is robust and easy to maintain.
 
 ## References and further reading
