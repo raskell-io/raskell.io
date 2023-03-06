@@ -14,15 +14,11 @@ katex: true
 
 ## Mathematical purity
 
-Haskell is a programming language that has gained popularity in recent years due to its focus on functional programming and mathematical concepts. As a language that emphasizes purity and immutability, Haskell is particularly well-suited to applications in mathematics, data analysis, and other areas where correctness and maintainability are critical.
-
-As a math enthusiast, I was naturally drawn to Haskell due to its roots in mathematical theory. Haskell was created by a group of researchers who were interested in creating a language that was as pure as possible. The language was designed to be purely functional, meaning that all computations are performed through the evaluation of functions. This approach allows Haskell programs to be more concise and easier to reason about than programs written in imperative languages like Java or C++.
+As someone who always was drawn to the beauty of mathematics, I was naturally curious about Haskell due to its roots in mathematical theory. Haskell was created by a group of researchers who were interested in creating a language that was as pure as possible. The language was designed to be purely functional, meaning that all computations are performed through the evaluation of functions. This approach allows Haskell programs to be more concise and easier to reason about than programs written in imperative languages like Java or C++. As a language that emphasizes purity and immutability, Haskell is particularly well-suited to applications in mathematics, data analysis, and other areas where correctness and maintainability are critical.
 
 In addition to its mathematical roots, Haskell's focus on purity and immutability also appealed to me as a programmer. As someone who has worked on projects with large codebases, I understand the importance of maintainability and the challenges that can arise when code is difficult to reason about or modify. By focusing on pure functions and immutability, Haskell reduces the potential for bugs and makes it easier to modify code without introducing new problems.
 
 In this blog post, I will provide an introduction to Haskell and explore how its focus on pure functions and easy refactoring can make code maintenance easier. I'll also provide some interesting code snippets to help illustrate Haskell's unique approach to programming. Whether you're a seasoned developer or a math enthusiast like myself, I hope that this post will give you a deeper appreciation for the beauty and power of Haskell.
-
-This blog post will provide an introduction to Haskell and will explore how its focus on pure functions and easy refactoring can make code maintenance easier.
 
 ## Mister Curry Haskell
 
