@@ -1,6 +1,9 @@
 # Zola build output
 public/
 
+# Claude Code configuration
+.claude/
+
 # mise
 .mise.local.toml
 
