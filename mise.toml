@@ -10,10 +10,7 @@ run = "zola serve"
 
 [tasks.build]
 description = "Build the site for production"
-run = [
-  "mise run assets",
-  "zola build"
-]
+run = "zola build"
 
 [tasks.check]
 description = "Check the site for errors without building"
@@ -46,9 +43,12 @@ ARTICLE
 echo "Created $FILE"
 """
 
-[tasks.assets]
-description = "Process all assets (images, fonts, etc.)"
-run = "mise run assets"
+[tasks.dev-build]
+description = "Build the site for development with asset processing"
+run = [
+  "mise run assets",
+  "zola build"
+]
 
 [tasks.convert-images]
 description = "Convert source images from static/src to AVIF format"
