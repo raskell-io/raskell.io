@@ -22,11 +22,18 @@
         <lastmod>2022-09-20</lastmod>
     </url>
     <url>
+        <loc>https://raskell.io/articles/mise-ate-my-makefile/</loc>
+        <lastmod>2025-12-14</lastmod>
+    </url>
+    <url>
         <loc>https://raskell.io/articles/my-openbsd-journey-getting-it-virtualized-with-libvirt-1/</loc>
         <lastmod>2023-02-06</lastmod>
     </url>
     <url>
         <loc>https://raskell.io/categories/</loc>
+    </url>
+    <url>
+        <loc>https://raskell.io/categories/field-notes/</loc>
     </url>
     <url>
         <loc>https://raskell.io/categories/meta/</loc>
@@ -44,6 +51,15 @@
         <loc>https://raskell.io/tags/</loc>
     </url>
     <url>
+        <loc>https://raskell.io/tags/dev-ex/</loc>
+    </url>
+    <url>
+        <loc>https://raskell.io/tags/oss/</loc>
+    </url>
+    <url>
         <loc>https://raskell.io/tags/raskell/</loc>
+    </url>
+    <url>
+        <loc>https://raskell.io/tags/rust/</loc>
     </url>
 </urlset>
