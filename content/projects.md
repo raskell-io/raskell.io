@@ -23,7 +23,7 @@ A security-first reverse proxy built to guard the free web. Built on Cloudflare'
 
 **Status:** In active development
 
-[GitHub](https://github.com/raskell-io/sentinel)
+[Website](https://sentinel.raskell.io) · [Docs](https://sentinel.raskell.io/docs/) · [GitHub](https://github.com/raskell-io/sentinel)
 
 ---
 
@@ -35,7 +35,7 @@ An e-book that explains the web's core technologies — HTTP, DNS, TLS, and the 
 
 **Status:** In progress
 
-[Read online](https://raskell-io.github.io/learn-you-the-web/) · [GitHub](https://github.com/raskell-io/learn-you-the-web)
+[Read online](https://learn-you-the-web.raskell.io) · [GitHub](https://github.com/raskell-io/learn-you-the-web)
 
 ---
 
