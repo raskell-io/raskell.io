@@ -1,65 +1,65 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
-        <loc>https://raskell.io/</loc>
+        <loc>https://www.raskell.io/</loc>
     </url>
     <url>
-        <loc>https://raskell.io/about/</loc>
+        <loc>https://www.raskell.io/about/</loc>
     </url>
     <url>
-        <loc>https://raskell.io/articles/</loc>
+        <loc>https://www.raskell.io/articles/</loc>
     </url>
     <url>
-        <loc>https://raskell.io/articles/all-beginning-is-haskell/</loc>
+        <loc>https://www.raskell.io/articles/all-beginning-is-haskell/</loc>
         <lastmod>2023-03-06</lastmod>
     </url>
     <url>
-        <loc>https://raskell.io/articles/disk-space-void-linux-maintenance/</loc>
+        <loc>https://www.raskell.io/articles/disk-space-void-linux-maintenance/</loc>
         <lastmod>2024-05-01</lastmod>
     </url>
     <url>
-        <loc>https://raskell.io/articles/hello-and-outlook/</loc>
+        <loc>https://www.raskell.io/articles/hello-and-outlook/</loc>
         <lastmod>2022-09-20</lastmod>
     </url>
     <url>
-        <loc>https://raskell.io/articles/mise-ate-my-makefile/</loc>
+        <loc>https://www.raskell.io/articles/mise-ate-my-makefile/</loc>
         <lastmod>2025-12-14</lastmod>
     </url>
     <url>
-        <loc>https://raskell.io/articles/my-openbsd-journey-getting-it-virtualized-with-libvirt-1/</loc>
+        <loc>https://www.raskell.io/articles/my-openbsd-journey-getting-it-virtualized-with-libvirt-1/</loc>
         <lastmod>2023-02-06</lastmod>
     </url>
     <url>
-        <loc>https://raskell.io/categories/</loc>
+        <loc>https://www.raskell.io/categories/</loc>
     </url>
     <url>
-        <loc>https://raskell.io/categories/field-notes/</loc>
+        <loc>https://www.raskell.io/categories/field-notes/</loc>
     </url>
     <url>
-        <loc>https://raskell.io/categories/meta/</loc>
+        <loc>https://www.raskell.io/categories/meta/</loc>
     </url>
     <url>
-        <loc>https://raskell.io/projects/</loc>
+        <loc>https://www.raskell.io/projects/</loc>
     </url>
     <url>
-        <loc>https://raskell.io/series/</loc>
+        <loc>https://www.raskell.io/series/</loc>
     </url>
     <url>
-        <loc>https://raskell.io/speaking/</loc>
+        <loc>https://www.raskell.io/speaking/</loc>
     </url>
     <url>
-        <loc>https://raskell.io/tags/</loc>
+        <loc>https://www.raskell.io/tags/</loc>
     </url>
     <url>
-        <loc>https://raskell.io/tags/dev-ex/</loc>
+        <loc>https://www.raskell.io/tags/dev-ex/</loc>
     </url>
     <url>
-        <loc>https://raskell.io/tags/oss/</loc>
+        <loc>https://www.raskell.io/tags/oss/</loc>
     </url>
     <url>
-        <loc>https://raskell.io/tags/raskell/</loc>
+        <loc>https://www.raskell.io/tags/raskell/</loc>
     </url>
     <url>
-        <loc>https://raskell.io/tags/rust/</loc>
+        <loc>https://www.raskell.io/tags/rust/</loc>
     </url>
 </urlset>

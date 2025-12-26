@@ -1,4 +1,4 @@
 User-agent: *
 Disallow:
 Allow: /
-Sitemap: https://raskell.io/sitemap.xml
+Sitemap: https://www.raskell.io/sitemap.xml
