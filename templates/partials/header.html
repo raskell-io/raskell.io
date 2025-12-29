@@ -1,23 +1,23 @@
-<nav class="navbar">
+<header class="navbar" role="banner">
     <div class="container">
         <div class="flex">
             <div>
-                <a class="brand" href="{{ get_url(path="/") }}">
+                <a class="brand" href="{{ get_url(path='/') }}" aria-label="{{ config.title }} Home">
                     {% if config.extra.logo %}
-                        <img src="{{ get_url(path=config.extra.logo) }}" alt="{{ config.title }} logo" class="brand-logo" />
+                        <img src="{{ get_url(path=config.extra.logo) }}" alt="" class="brand-logo" aria-hidden="true" />
                     {% endif %}
                     <span class="brand-text">{{ config.title }}</span>
                 </a>
             </div>
-            <div class="flex nav-links">
-                <a href="{{ get_url(path="@/articles/_index.md") }}">Articles</a>
-                <a href="{{ get_url(path="@/projects.md") }}">Projects</a>
-                <a href="{{ get_url(path="@/speaking.md") }}">Speaking</a>
-                <a href="{{ get_url(path="@/about.md") }}">About</a>
+            <nav class="flex nav-links" role="navigation" aria-label="Main navigation">
+                <a href="{{ get_url(path='@/articles/_index.md') }}">Articles</a>
+                <a href="{{ get_url(path='@/projects.md') }}">Projects</a>
+                <a href="{{ get_url(path='@/speaking.md') }}">Speaking</a>
+                <a href="{{ get_url(path='@/about.md') }}">About</a>
                 {% if config.extra.color_scheme_toggle %}
-                <button id="dark-mode-button" aria-label="Toggle theme" title="Toggle light/dark theme">
+                <button id="dark-mode-button" aria-label="Toggle theme" aria-live="polite" title="Toggle light/dark theme">
                     <div class="theme-toggle-inner">
-                        <svg class="sun-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <svg class="sun-icon" aria-hidden="true" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                             <circle cx="12" cy="12" r="5"></circle>
                             <line x1="12" y1="1" x2="12" y2="3"></line>
                             <line x1="12" y1="21" x2="12" y2="23"></line>
@@ -28,38 +28,38 @@
                             <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
                             <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
                         </svg>
-                        <svg class="moon-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <svg class="moon-icon" aria-hidden="true" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                             <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
                         </svg>
                     </div>
                 </button>
                 {% endif %}
-            </div>
-            <button id="mobile-menu-button" class="mobile-menu-button" aria-label="Open menu" aria-expanded="false">
-                <svg class="menu-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            </nav>
+            <button id="mobile-menu-button" class="mobile-menu-button" aria-label="Open navigation menu" aria-expanded="false" aria-controls="mobile-menu-overlay">
+                <svg class="menu-icon" aria-hidden="true" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                     <line x1="3" y1="6" x2="21" y2="6"></line>
                     <line x1="3" y1="12" x2="21" y2="12"></line>
                     <line x1="3" y1="18" x2="21" y2="18"></line>
                 </svg>
-                <svg class="close-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <svg class="close-icon" aria-hidden="true" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                     <line x1="18" y1="6" x2="6" y2="18"></line>
                     <line x1="6" y1="6" x2="18" y2="18"></line>
                 </svg>
             </button>
         </div>
     </div>
-</nav>
+</header>
 
-<div id="mobile-menu-overlay" class="mobile-menu-overlay">
-    <div class="mobile-menu-content">
-        <a href="{{ get_url(path="@/articles/_index.md") }}">Articles</a>
-        <a href="{{ get_url(path="@/projects.md") }}">Projects</a>
-        <a href="{{ get_url(path="@/speaking.md") }}">Speaking</a>
-        <a href="{{ get_url(path="@/about.md") }}">About</a>
+<div id="mobile-menu-overlay" class="mobile-menu-overlay" role="dialog" aria-modal="true" aria-label="Navigation menu" aria-hidden="true">
+    <nav class="mobile-menu-content" role="navigation" aria-label="Mobile navigation">
+        <a href="{{ get_url(path='@/articles/_index.md') }}">Articles</a>
+        <a href="{{ get_url(path='@/projects.md') }}">Projects</a>
+        <a href="{{ get_url(path='@/speaking.md') }}">Speaking</a>
+        <a href="{{ get_url(path='@/about.md') }}">About</a>
         {% if config.extra.color_scheme_toggle %}
         <button id="dark-mode-button-mobile" class="mobile-theme-toggle" aria-label="Toggle theme">
             <div class="theme-toggle-inner">
-                <svg class="sun-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <svg class="sun-icon" aria-hidden="true" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                     <circle cx="12" cy="12" r="5"></circle>
                     <line x1="12" y1="1" x2="12" y2="3"></line>
                     <line x1="12" y1="21" x2="12" y2="23"></line>
@@ -70,12 +70,12 @@
                     <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
                     <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
                 </svg>
-                <svg class="moon-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <svg class="moon-icon" aria-hidden="true" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                     <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
                 </svg>
             </div>
             <span class="theme-label">Toggle theme</span>
         </button>
         {% endif %}
-    </div>
+    </nav>
 </div>

@@ -47,6 +47,10 @@ max_category_to_show = 10
 enable_footnotes = true
 comments_enabled = false
 
+# SEO metadata
+keywords = "platform automation, edge systems, applied security, open standards, Rust, DevOps, infrastructure"
+og_image = "raskell-mascot.avif"
+
 [extra.social]
 github = "https://github.com/raffaelschneider"
 linkedin = "https://ch.linkedin.com/in/raffael-e-schneider"

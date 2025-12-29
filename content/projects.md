@@ -11,6 +11,38 @@ Enabling untapped computing power through distributed infrastructure orchestrati
 
 ---
 
+## Sango
+
+A command-line diagnostic tool that evaluates web edge infrastructure health. Named after coral, symbolizing how the tool monitors edge systems like coral guards a reef ecosystem.
+
+**Key features:**
+- TLS analysis (certificate chain, cipher suites, ALPN)
+- HTTP/1.1, HTTP/2, and HTTP/3 protocol detection
+- Security header evaluation (HSTS, CSP, COOP/COEP)
+- Performance metrics with threshold-based alerts
+
+**Status:** In active development
+
+[GitHub](https://github.com/raskell-io/sango)
+
+---
+
+## Ushio
+
+A traffic replay tool designed to understand edge and WAF behavior. Named after the Japanese word for "tide," reflecting how the tool replays captured traffic deterministically across environments.
+
+**Key features:**
+- HAR file support for traffic capture
+- URL rewriting for staging/production comparison
+- Header mutation and cookie stripping
+- WAF detection and behavioral diff
+
+**Status:** In active development
+
+[GitHub](https://github.com/raskell-io/ushio)
+
+---
+
 ## Sentinel
 
 A security-first reverse proxy built to guard the free web. Built on Cloudflare's Pingora library, Sentinel is designed as a production-ready alternative to Nginx and HAProxy with better performance characteristics and operational simplicity.
