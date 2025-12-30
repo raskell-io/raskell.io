@@ -5,9 +5,27 @@ template = "static-page.html"
 
 ## Archipelago
 
-Enabling untapped computing power through distributed infrastructure orchestration. A platform for coordinating and utilizing distributed compute resources efficiently.
+Compute, closer to you. A new kind of infrastructure is forming. Islands of power, connected by currents of data.
 
 **Status:** In development (not yet published)
+
+[Website](https://archipelag-io.github.io/website/)
+
+---
+
+## Sentinel
+
+A security-first reverse proxy built to guard the free web. Built on Cloudflare's Pingora library, Sentinel is designed as a production-ready alternative to Nginx and HAProxy with better performance characteristics and operational simplicity.
+
+**Key features:**
+- Built on Pingora's async Rust foundation
+- Security-first design
+- High-performance edge routing
+- Production-grade reliability
+
+**Status:** In active development
+
+[Website](https://sentinel.raskell.io) · [Docs](https://sentinel.raskell.io/docs/) · [GitHub](https://github.com/raskell-io/sentinel)
 
 ---
 
@@ -43,22 +61,6 @@ A traffic replay tool designed to understand edge and WAF behavior. Named after 
 
 ---
 
-## Sentinel
-
-A security-first reverse proxy built to guard the free web. Built on Cloudflare's Pingora library, Sentinel is designed as a production-ready alternative to Nginx and HAProxy with better performance characteristics and operational simplicity.
-
-**Key features:**
-- Built on Pingora's async Rust foundation
-- Security-first design
-- High-performance edge routing
-- Production-grade reliability
-
-**Status:** In active development
-
-[Website](https://sentinel.raskell.io) · [Docs](https://sentinel.raskell.io/docs/) · [GitHub](https://github.com/raskell-io/sentinel)
-
----
-
 ## Learn You the Web
 
 A friendly guide to how the web actually works. For Real This Time.
@@ -69,10 +71,3 @@ An e-book that explains the web's core technologies — HTTP, DNS, TLS, and the 
 
 [Read online](https://learn-you-the-web.raskell.io) · [GitHub](https://github.com/raskell-io/learn-you-the-web)
 
----
-
-## raskell.io
-
-This site — a lightweight static blog built with Zola. No tracking, no JavaScript frameworks, just fast content delivery.
-
-[GitHub](https://github.com/raskell-io/raskell.io)
