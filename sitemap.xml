@@ -22,6 +22,10 @@
         <lastmod>2022-09-20</lastmod>
     </url>
     <url>
+        <loc>https://www.raskell.io/articles/looking-back-on-2025/</loc>
+        <lastmod>2025-12-31</lastmod>
+    </url>
+    <url>
         <loc>https://www.raskell.io/articles/mise-ate-my-makefile/</loc>
         <lastmod>2025-12-14</lastmod>
     </url>
@@ -31,6 +35,9 @@
     </url>
     <url>
         <loc>https://www.raskell.io/categories/</loc>
+    </url>
+    <url>
+        <loc>https://www.raskell.io/categories/deep-dives/</loc>
     </url>
     <url>
         <loc>https://www.raskell.io/categories/field-notes/</loc>
@@ -51,7 +58,13 @@
         <loc>https://www.raskell.io/tags/</loc>
     </url>
     <url>
+        <loc>https://www.raskell.io/tags/ai-for-ops/</loc>
+    </url>
+    <url>
         <loc>https://www.raskell.io/tags/dev-ex/</loc>
+    </url>
+    <url>
+        <loc>https://www.raskell.io/tags/edge-systems/</loc>
     </url>
     <url>
         <loc>https://www.raskell.io/tags/oss/</loc>
