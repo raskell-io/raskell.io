@@ -5,7 +5,7 @@ template = "static-page.html"
 
 ## Talks
 
-### Self-Learning WAF: Using Generative AI to Tame ModSecurity False Positives — NCS-W01
+### [Self-Learning WAF: Using Generative AI to Tame ModSecurity False Positives — NCS-W01](https://path.rsaconference.com/flow/rsac/us26/FullAgenda/page/catalog/session/1753946922633001YdMq)
 
 **RSAC 2026** · Wednesday, March 25, 2026 · 8:30–9:20 AM PDT (16:30–17:20 CET)
 
@@ -15,8 +15,6 @@ ModSecurity with the OWASP Core Rule Set (CRS) is a powerful open-source WAF, bu
 - How generative AI can classify WAF false positives with high accuracy
 - A practical pipeline for automated rule generation with human oversight
 - Lessons learned from applying this approach in production environments
-
-[View on RSAC agenda](https://path.rsaconference.com/flow/rsac/us26/FullAgenda/page/catalog/session/1753946922633001YdMq)
 
 **Media-friendly version:** Using generative AI to automatically detect and fix WAF false positives — keeping ModSecurity effective without the tuning headache.
 
