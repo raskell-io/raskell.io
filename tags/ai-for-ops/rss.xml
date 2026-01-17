@@ -2,19 +2,19 @@
 <rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
     <channel>
       <title>Raskell - ai-for-ops</title>
-      <link>https://www.raskell.io</link>
+      <link>https://raskell.io</link>
       <description>Writing about platform automation, edge systems, applied security, and open standards. Building automation-first platforms that survive production reality.</description>
       <generator>Zola</generator>
       <language>en</language>
-      <atom:link href="https://www.raskell.io/tags/ai-for-ops/rss.xml" rel="self" type="application/rss+xml"/>
+      <atom:link href="https://raskell.io/tags/ai-for-ops/rss.xml" rel="self" type="application/rss+xml"/>
       <lastBuildDate>Wed, 31 Dec 2025 00:00:00 +0000</lastBuildDate>
       <item>
           <title>Looking back on 2025</title>
           <pubDate>Wed, 31 Dec 2025 00:00:00 +0000</pubDate>
           <author>Unknown</author>
-          <link>https://www.raskell.io/articles/looking-back-on-2025/</link>
-          <guid>https://www.raskell.io/articles/looking-back-on-2025/</guid>
-          <description xml:base="https://www.raskell.io/articles/looking-back-on-2025/">&lt;p&gt;I spent part of this year on the shores of Okinawa. The water there is something else entirely — this impossible azure that shifts to turquoise in the shallows, so clear you can see the coral formations from the surface. I found myself thinking about systems while I was there, the way you do when you’re floating in salt water with nothing pressing to attend to.&lt;&#x2F;p&gt;
+          <link>https://raskell.io/articles/looking-back-on-2025/</link>
+          <guid>https://raskell.io/articles/looking-back-on-2025/</guid>
+          <description xml:base="https://raskell.io/articles/looking-back-on-2025/">&lt;p&gt;I spent part of this year on the shores of Okinawa. The water there is something else entirely — this impossible azure that shifts to turquoise in the shallows, so clear you can see the coral formations from the surface. I found myself thinking about systems while I was there, the way you do when you’re floating in salt water with nothing pressing to attend to.&lt;&#x2F;p&gt;
 &lt;p&gt;Between swims, I read Tim Berners-Lee’s “This is for everyone.” I’ve been building web software for over a decade now, and I thought I understood what the web was. But reading TBL’s words while watching that reef ecosystem do its thing — thousands of species in constant exchange, no central coordinator, just emergent complexity from simple rules — something shifted in how I saw it all.&lt;&#x2F;p&gt;
 &lt;p&gt;The web TBL imagined was supposed to work like that reef. A commons. Many small nodes, each doing their own thing, connected through open protocols. Information flowing freely. The beauty of it wasn’t in any single node but in the connections between them, the way the whole became more than the sum of its parts. The same principle that makes a reef resilient makes a network powerful: diversity, redundancy, local adaptation.&lt;&#x2F;p&gt;
 &lt;p&gt;What we built instead looks more like industrial aquaculture. Five platforms. Algorithmic monoculture. Content optimized for engagement metrics rather than usefulness. We took a system designed for decentralization and built the most centralized information infrastructure in human history.&lt;&#x2F;p&gt;

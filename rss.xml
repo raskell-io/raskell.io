@@ -2,19 +2,19 @@
 <rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
     <channel>
       <title>Raskell</title>
-      <link>https://www.raskell.io</link>
+      <link>https://raskell.io</link>
       <description>Writing about platform automation, edge systems, applied security, and open standards. Building automation-first platforms that survive production reality.</description>
       <generator>Zola</generator>
       <language>en</language>
-      <atom:link href="https://www.raskell.io/rss.xml" rel="self" type="application/rss+xml"/>
+      <atom:link href="https://raskell.io/rss.xml" rel="self" type="application/rss+xml"/>
       <lastBuildDate>Wed, 31 Dec 2025 00:00:00 +0000</lastBuildDate>
       <item>
           <title>Looking back on 2025</title>
           <pubDate>Wed, 31 Dec 2025 00:00:00 +0000</pubDate>
           <author>Unknown</author>
-          <link>https://www.raskell.io/articles/looking-back-on-2025/</link>
-          <guid>https://www.raskell.io/articles/looking-back-on-2025/</guid>
-          <description xml:base="https://www.raskell.io/articles/looking-back-on-2025/">&lt;p&gt;I spent part of this year on the shores of Okinawa. The water there is something else entirely — this impossible azure that shifts to turquoise in the shallows, so clear you can see the coral formations from the surface. I found myself thinking about systems while I was there, the way you do when you’re floating in salt water with nothing pressing to attend to.&lt;&#x2F;p&gt;
+          <link>https://raskell.io/articles/looking-back-on-2025/</link>
+          <guid>https://raskell.io/articles/looking-back-on-2025/</guid>
+          <description xml:base="https://raskell.io/articles/looking-back-on-2025/">&lt;p&gt;I spent part of this year on the shores of Okinawa. The water there is something else entirely — this impossible azure that shifts to turquoise in the shallows, so clear you can see the coral formations from the surface. I found myself thinking about systems while I was there, the way you do when you’re floating in salt water with nothing pressing to attend to.&lt;&#x2F;p&gt;
 &lt;p&gt;Between swims, I read Tim Berners-Lee’s “This is for everyone.” I’ve been building web software for over a decade now, and I thought I understood what the web was. But reading TBL’s words while watching that reef ecosystem do its thing — thousands of species in constant exchange, no central coordinator, just emergent complexity from simple rules — something shifted in how I saw it all.&lt;&#x2F;p&gt;
 &lt;p&gt;The web TBL imagined was supposed to work like that reef. A commons. Many small nodes, each doing their own thing, connected through open protocols. Information flowing freely. The beauty of it wasn’t in any single node but in the connections between them, the way the whole became more than the sum of its parts. The same principle that makes a reef resilient makes a network powerful: diversity, redundancy, local adaptation.&lt;&#x2F;p&gt;
 &lt;p&gt;What we built instead looks more like industrial aquaculture. Five platforms. Algorithmic monoculture. Content optimized for engagement metrics rather than usefulness. We took a system designed for decentralization and built the most centralized information infrastructure in human history.&lt;&#x2F;p&gt;
@@ -43,9 +43,9 @@
           <title>Mise ate my Makefile</title>
           <pubDate>Sun, 14 Dec 2025 00:00:00 +0000</pubDate>
           <author>Unknown</author>
-          <link>https://www.raskell.io/articles/mise-ate-my-makefile/</link>
-          <guid>https://www.raskell.io/articles/mise-ate-my-makefile/</guid>
-          <description xml:base="https://www.raskell.io/articles/mise-ate-my-makefile/">&lt;h2 id=&quot;the-problem-with-project-setup&quot;&gt;The problem with project setup&lt;&#x2F;h2&gt;
+          <link>https://raskell.io/articles/mise-ate-my-makefile/</link>
+          <guid>https://raskell.io/articles/mise-ate-my-makefile/</guid>
+          <description xml:base="https://raskell.io/articles/mise-ate-my-makefile/">&lt;h2 id=&quot;the-problem-with-project-setup&quot;&gt;The problem with project setup&lt;&#x2F;h2&gt;
 &lt;p&gt;Every project starts the same. You need Ruby 3.2.1 but have 2.7. You need Node 20 but have 18. Someone wrote a Makefile that assumes GNU make but you’re on BSD. The &lt;code&gt;scripts&#x2F;&lt;&#x2F;code&gt; folder has 47 shell scripts and nobody remembers what half of them do.&lt;&#x2F;p&gt;
 &lt;p&gt;I found mise. It fixed all of this.&lt;&#x2F;p&gt;
 &lt;h2 id=&quot;what-mise-actually-is&quot;&gt;What mise actually is&lt;&#x2F;h2&gt;
@@ -196,9 +196,9 @@
           <title>Disk space maintenance on Void Linux</title>
           <pubDate>Wed, 01 May 2024 00:00:00 +0000</pubDate>
           <author>Unknown</author>
-          <link>https://www.raskell.io/articles/disk-space-void-linux-maintenance/</link>
-          <guid>https://www.raskell.io/articles/disk-space-void-linux-maintenance/</guid>
-          <description xml:base="https://www.raskell.io/articles/disk-space-void-linux-maintenance/">&lt;h2 id=&quot;monday-morning-surprise&quot;&gt;Monday morning surprise&lt;&#x2F;h2&gt;
+          <link>https://raskell.io/articles/disk-space-void-linux-maintenance/</link>
+          <guid>https://raskell.io/articles/disk-space-void-linux-maintenance/</guid>
+          <description xml:base="https://raskell.io/articles/disk-space-void-linux-maintenance/">&lt;h2 id=&quot;monday-morning-surprise&quot;&gt;Monday morning surprise&lt;&#x2F;h2&gt;
 &lt;p&gt;As I spent most time doing stuff with my computer rather than configuring my beloved Linux distribution, Void Linux, I have developed the tendency to not really bother about Void at all until something crucial becomes unusable. After almost two years of having switched from Arch to Void, I have actually never encountered any major problem and felt I had made the right decision.&lt;&#x2F;p&gt;
 &lt;p&gt;I checked my disk usage out of curiosity if the 250GB solid-state disk would be enough. And there came the surprise:&lt;&#x2F;p&gt;
 &lt;pre data-lang=&quot;shell&quot; style=&quot;background-color:#2e3440;color:#d8dee9;&quot; class=&quot;language-shell &quot;&gt;&lt;code class=&quot;language-shell&quot; data-lang=&quot;shell&quot;&gt;&lt;span&gt;$ df -H
@@ -252,9 +252,9 @@
           <title>All beginning is Haskell</title>
           <pubDate>Mon, 06 Mar 2023 00:00:00 +0000</pubDate>
           <author>Unknown</author>
-          <link>https://www.raskell.io/articles/all-beginning-is-haskell/</link>
-          <guid>https://www.raskell.io/articles/all-beginning-is-haskell/</guid>
-          <description xml:base="https://www.raskell.io/articles/all-beginning-is-haskell/">&lt;h2 id=&quot;the-beauty-of-mathematics&quot;&gt;The beauty of mathematics&lt;&#x2F;h2&gt;
+          <link>https://raskell.io/articles/all-beginning-is-haskell/</link>
+          <guid>https://raskell.io/articles/all-beginning-is-haskell/</guid>
+          <description xml:base="https://raskell.io/articles/all-beginning-is-haskell/">&lt;h2 id=&quot;the-beauty-of-mathematics&quot;&gt;The beauty of mathematics&lt;&#x2F;h2&gt;
 &lt;p&gt;Mathematics is often considered beautiful because it provides a way to describe and understand the world in a way that is precise, elegant, and abstract. Mathematics can be seen as a language that allows us to describe complex phenomena and patterns in a way that is independent of the particular objects or situations involved. This abstract quality of mathematics is what makes it so powerful and beautiful.&lt;&#x2F;p&gt;
 &lt;p&gt;Mathematics can also be considered beautiful because of its ability to reveal unexpected connections and relationships between seemingly disparate areas of study. By using the language of mathematics to describe complex phenomena, we are able to identify deep and fundamental connections between seemingly unrelated areas of study, revealing the underlying structure and order in the natural world.&lt;&#x2F;p&gt;
 &lt;p&gt;As someone who always was drawn by this type of mathematical beauty, I also was naturally drawn to Haskell due to its roots in mathematical theory since the first time I read about Haskell. Haskell was created by a group of researchers who were interested in creating a language that was as pure as possible. The language was designed to be purely functional, meaning that all computations are performed through the evaluation of functions. This approach allows Haskell programs to be more concise and easier to reason about than programs written in imperative languages like Java or C++. As a language that emphasizes purity and immutability, Haskell is particularly well-suited to applications in mathematics, data analysis, and other areas where correctness and maintainability are critical.&lt;&#x2F;p&gt;
@@ -422,9 +422,9 @@ The monad structure is used in mathematics to describe a wide range of mathemati
           <title>My OpenBSD journey: Getting it virtualized with libvirt (1)</title>
           <pubDate>Mon, 06 Feb 2023 00:00:00 +0000</pubDate>
           <author>Unknown</author>
-          <link>https://www.raskell.io/articles/my-openbsd-journey-getting-it-virtualized-with-libvirt-1/</link>
-          <guid>https://www.raskell.io/articles/my-openbsd-journey-getting-it-virtualized-with-libvirt-1/</guid>
-          <description xml:base="https://www.raskell.io/articles/my-openbsd-journey-getting-it-virtualized-with-libvirt-1/">&lt;h2 id=&quot;void-linux-as-my-daily-driver&quot;&gt;Void Linux as my daily driver&lt;&#x2F;h2&gt;
+          <link>https://raskell.io/articles/my-openbsd-journey-getting-it-virtualized-with-libvirt-1/</link>
+          <guid>https://raskell.io/articles/my-openbsd-journey-getting-it-virtualized-with-libvirt-1/</guid>
+          <description xml:base="https://raskell.io/articles/my-openbsd-journey-getting-it-virtualized-with-libvirt-1/">&lt;h2 id=&quot;void-linux-as-my-daily-driver&quot;&gt;Void Linux as my daily driver&lt;&#x2F;h2&gt;
 &lt;p&gt;Around six months ago, I decided to ditch my long in the tooth Arch-based setup on my belovest Thinkpad X1 Carbon. I’ve been very loyal over the years, and almost came to belive that Arch will be a constant in my adult life. While I kept up with upcoming technologies, I somehow lost track of the ever so diversifying landscape of Linux distributions. It took me a while of constantly coming across a generically named reference to what seemed to be yet another Linux distribution. That outwardly generic sounding name, &lt;a rel=&quot;noopener&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;voidlinux.org&#x2F;&quot;&gt;Void Linux&lt;&#x2F;a&gt;, kept poking my curiosity by supposedly feeling like Arch Linux in the old days, while sharing some substantial DNA with the BSD operating systems. Yet, that’s another story I might tell another day, but to remain brief, the BSDs, in particular the infamous OpenBSD with its quite infamous lead developer Theo De Raadt, always were what I considered the endgame. The holy grail of Unix operating systems, so did I think over the decades, FreeBSD, NetBSD and OpenBSD, have always been on my personal radar and I felt I had to earn the intellectual capacity to be able to properly put them at use one day. Last year, when I made the (almost painless) switch from Arch Linux to Void Linux, the simplicity and especially the barebone experience of Void reignited the fascination and the admiration I always had for the BSD operating systems and their philosophy.&lt;&#x2F;p&gt;
 &lt;p&gt;While I could write (and definitely will in the near future) about how my journey onto Void Linux and how it has been so far, I preferred to write down, in some like diary, and document every step on how one can approach and ultimately use &lt;a rel=&quot;noopener&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;www.openbsd.org&#x2F;&quot;&gt;OpenBSD&lt;&#x2F;a&gt; in 2023. Big disclaimer, I’ve yet to install OpenBSD on some baremetal server I ordered some days ago, but dabbled around in the meantime with OS-level virtualization in order to get it running. That’s what brings me to &lt;em&gt;libvirt&lt;&#x2F;em&gt; and my surprise to learn that I wouldn’t need some full-fledged virtualization solution like the ones offered by VirtualBox or VMWare to efficiently run a virtualized OpenBSD machine. So, ok, let’s recap, so far we got the following bill of materials:&lt;&#x2F;p&gt;
 &lt;ul&gt;
@@ -544,9 +544,9 @@ The monad structure is used in mathematics to describe a wide range of mathemati
           <title>Hello and outlook</title>
           <pubDate>Tue, 20 Sep 2022 00:00:00 +0000</pubDate>
           <author>Unknown</author>
-          <link>https://www.raskell.io/articles/hello-and-outlook/</link>
-          <guid>https://www.raskell.io/articles/hello-and-outlook/</guid>
-          <description xml:base="https://www.raskell.io/articles/hello-and-outlook/">&lt;h2 id=&quot;hello-world&quot;&gt;Hello world&lt;&#x2F;h2&gt;
+          <link>https://raskell.io/articles/hello-and-outlook/</link>
+          <guid>https://raskell.io/articles/hello-and-outlook/</guid>
+          <description xml:base="https://raskell.io/articles/hello-and-outlook/">&lt;h2 id=&quot;hello-world&quot;&gt;Hello world&lt;&#x2F;h2&gt;
 &lt;p&gt;Welcome to my tech blog! My name is Raffael and I am excited to share my rumings about the state of tech, open-source, and the life as a software developer with you.&lt;&#x2F;p&gt;
 &lt;p&gt;In this first post, I wanted to introduce myself and explain what you can expect to find on this blog. I have been working in the tech industry for several years, and I have experience with a variety of technologies, programming languages, and operating systems. I have a strong interest in open-source software and the principles of open collaboration and sharing that underpin it. Also, I have a passion for tech hardware and the funtional restoration of discarded equipment. The freedom to express oneself with technology to make the world a more comfortable place is a strong focus of mine.&lt;&#x2F;p&gt;
 &lt;h2 id=&quot;outlook&quot;&gt;Outlook&lt;&#x2F;h2&gt;
