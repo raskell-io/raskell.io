@@ -5,6 +5,8 @@ template = "static-page.html"
 
 Hi, I'm Raffael. I live in Basel and I build automation-first platforms and edge/web ingress systems that survive production reality.
 
+**raskell** = rascal × Haskell × Raffael (tanuki mascot included).
+
 I like hard problems. The kind where latency, reliability, risk, and people all collide.
 Applied security is just one arena of that. It is systems under pressure with adversarial inputs and questionable signal-to-noise.
 
@@ -21,7 +23,10 @@ Applied security is just one arena of that. It is systems under pressure with ad
 
 ## Speaking
 
-RSAC 2026 speaker. Details soon.
+**RSAC 2026** — *Self-Learning WAF: Using Generative AI to Tame ModSecurity False Positives* (NCS-W01)
+Wednesday, March 25, 2026 · 8:30–9:20 AM PDT
+
+[Full details →](/speaking)
 
 ## Contact
 

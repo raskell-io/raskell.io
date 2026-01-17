@@ -3,17 +3,11 @@ title = "Projects"
 template = "static-page.html"
 +++
 
-## Archipelago
+## Systems & Tooling
 
-Compute, closer to you. A new kind of infrastructure is forming. Islands of power, connected by currents of data.
+Production-grade infrastructure and developer tools.
 
-**Status:** In development (not yet published)
-
-[Website](https://archipelag-io.github.io/website/)
-
----
-
-## Sentinel
+### Sentinel
 
 A security-first reverse proxy built to guard the free web. Built on Cloudflare's Pingora library, Sentinel is designed as a production-ready alternative to Nginx and HAProxy with better performance characteristics and operational simplicity.
 
@@ -29,7 +23,17 @@ A security-first reverse proxy built to guard the free web. Built on Cloudflare'
 
 ---
 
-## Sango
+### Archipelago
+
+Compute, closer to you. A new kind of infrastructure is forming. Islands of power, connected by currents of data.
+
+**Status:** In development (not yet published)
+
+[Website](https://archipelag-io.github.io/website/)
+
+---
+
+### Sango
 
 A command-line diagnostic tool that evaluates web edge infrastructure health. Named after coral, symbolizing how the tool monitors edge systems like coral guards a reef ecosystem.
 
@@ -45,7 +49,44 @@ A command-line diagnostic tool that evaluates web edge infrastructure health. Na
 
 ---
 
-## Kurumi
+### Ushio
+
+A traffic replay tool designed to understand edge and WAF behavior. Named after the Japanese word for "tide," reflecting how the tool replays captured traffic deterministically across environments.
+
+**Key features:**
+- HAR file support for traffic capture
+- URL rewriting for staging/production comparison
+- Header mutation and cookie stripping
+- WAF detection and behavioral diff
+
+**Status:** In active development
+
+[GitHub](https://github.com/raskell-io/ushio)
+
+---
+
+## Labs
+
+Passion projects, experiments, and things built for the joy of building.
+
+### Terrarium
+
+A societal simulation engine where LLM-powered agents form emergent civilizations. A societal petri dish — create worlds with rules, populate them with autonomous agents powered by language models, and observe what develops organically.
+
+**Key features:**
+- Agents with personality traits, beliefs, survival needs, and memories
+- Seven core actions (move, gather, eat, rest, speak, give, attack)
+- Event-sourced logging with perfect replay capability
+- Dwarf Fortress-inspired terminal viewer
+- Beliefs over facts — property exists only as subjective conviction
+
+**Status:** In active development
+
+[GitHub](https://github.com/raskell-io/terrarium)
+
+---
+
+### Kurumi
 
 A local-first second brain. Your ideas, everywhere, offline. Named after the Japanese word for walnut — because it looks like a brain.
 
@@ -63,40 +104,7 @@ A local-first second brain. Your ideas, everywhere, offline. Named after the Jap
 
 ---
 
-## Terrarium
-
-A societal simulation engine where LLM-powered agents form emergent civilizations. A societal petri dish — create worlds with rules, populate them with autonomous agents powered by language models, and observe what develops organically.
-
-**Key features:**
-- Agents with personality traits, beliefs, survival needs, and memories
-- Seven core actions (move, gather, eat, rest, speak, give, attack)
-- Event-sourced logging with perfect replay capability
-- Dwarf Fortress-inspired terminal viewer
-- Beliefs over facts — property exists only as subjective conviction
-
-**Status:** In active development
-
-[GitHub](https://github.com/raskell-io/terrarium)
-
----
-
-## Ushio
-
-A traffic replay tool designed to understand edge and WAF behavior. Named after the Japanese word for "tide," reflecting how the tool replays captured traffic deterministically across environments.
-
-**Key features:**
-- HAR file support for traffic capture
-- URL rewriting for staging/production comparison
-- Header mutation and cookie stripping
-- WAF detection and behavioral diff
-
-**Status:** In active development
-
-[GitHub](https://github.com/raskell-io/ushio)
-
----
-
-## Learn You the Web
+### Learn You the Web
 
 A friendly guide to how the web actually works. For Real This Time.
 
