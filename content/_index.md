@@ -4,7 +4,7 @@ title = "Home"
 
 Hi, I'm Raffael.
 
-I build automation-first platforms and edge systems that survive production reality.
+Systems that keep working when reality shows up.
 
 This site is my workshop — where I write about platform automation, edge infrastructure, applied security, and open standards. Languages and AI are tools; they serve humans, not the other way around.
 

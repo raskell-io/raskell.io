@@ -7,6 +7,8 @@ Hi, I'm Raffael. I live in Basel and I build automation-first platforms and edge
 
 **raskell** = rascal × Haskell × Raffael (tanuki mascot included).
 
+Tech that serves humans — boring by default, precise when required.
+
 I like hard problems. The kind where latency, reliability, risk, and people all collide.
 Applied security is just one arena of that. It is systems under pressure with adversarial inputs and questionable signal-to-noise.
 
