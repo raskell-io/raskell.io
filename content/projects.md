@@ -3,13 +3,11 @@ title = "Projects"
 template = "static-page.html"
 +++
 
-## Systems & Tooling
-
-Production-grade infrastructure and developer tools.
+## Flagship and serious builds
 
 ### Sentinel
 
-A security-first reverse proxy built to guard the free web. Built on Cloudflare's Pingora library, Sentinel is designed as a production-ready alternative to Nginx and HAProxy with better performance characteristics and operational simplicity.
+A security-first reverse proxy built to guard the free web based on Cloudflare's Pingora framework.
 
 **Key features:**
 - Built on Pingora's async Rust foundation
@@ -20,6 +18,36 @@ A security-first reverse proxy built to guard the free web. Built on Cloudflare'
 **Status:** In active development
 
 [Website](https://sentinel.raskell.io) · [Docs](https://sentinel.raskell.io/docs/) · [GitHub](https://github.com/raskell-io/sentinel)
+
+---
+
+### hx
+
+Extremely fast Haskell package + project manager built in Rust.
+
+**Status:** In active development
+
+[GitHub](https://github.com/raskell-io/hx)
+
+---
+
+### bhc
+
+The Basel Haskell Compiler. Next-gen compiler + runtime: predictable performance, structured concurrency, tensor-native numeric pipeline.
+
+**Status:** In active development
+
+[GitHub](https://github.com/raskell-io/bhc)
+
+---
+
+### Shiioo (CO)
+
+The Virtual Company OS. Agentic enterprise orchestrator: DAG workflows, event sourcing, MCP tools.
+
+**Status:** In active development
+
+[GitHub](https://github.com/raskell-io/shiioo)
 
 ---
 
@@ -65,9 +93,9 @@ A traffic replay tool designed to understand edge and WAF behavior. Named after 
 
 ---
 
-## Labs
+## Labs / passion projects
 
-Passion projects, experiments, and things built for the joy of building.
+These are exploratory. Some will become serious. Some will stay fun.
 
 ### Terrarium
 
@@ -83,6 +111,26 @@ A societal simulation engine where LLM-powered agents form emergent civilization
 **Status:** In active development
 
 [GitHub](https://github.com/raskell-io/terrarium)
+
+---
+
+### robogym
+
+Rust/Bevy PWA for training robotic agents.
+
+**Status:** Very early
+
+[GitHub](https://github.com/raskell-io/robogym)
+
+---
+
+### Paw & Claw: Woodland Wars
+
+HD-2D-stylized turn-based tactics game (spiritual successor to Nintendo's Advance Wars) built with Rust/Bevy.
+
+**Status:** In active development
+
+[GitHub](https://github.com/raskell-io/paw-and-claw)
 
 ---
 
@@ -113,4 +161,3 @@ An e-book that explains the web's core technologies — HTTP, DNS, TLS, and the 
 **Status:** In progress
 
 [Read online](https://learn-you-the-web.raskell.io) · [GitHub](https://github.com/raskell-io/learn-you-the-web)
-
