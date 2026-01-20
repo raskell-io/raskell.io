@@ -44,13 +44,6 @@
                         <time>{{ page.date | date(format="%Y-%m-%d") }}</time>
                         <h3>{{ page.title }}</h3>
                     </div>
-                    {% if page.taxonomies.tags %}
-                    <div class="post-tags">
-                        {% for tag in page.taxonomies.tags | slice(end=3) %}
-                        <span class="tag">{{ tag }}</span>
-                        {% endfor %}
-                    </div>
-                    {% endif %}
                 </a>
             </div>
             {% endfor %}
