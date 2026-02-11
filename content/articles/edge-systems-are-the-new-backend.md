@@ -1,7 +1,6 @@
 +++
 title = "Edge Systems Are the New Backend"
 date = 2026-02-11
-draft = true
 description = "Auth, policy, inference, and business logic are migrating to the edge and the client. The traditional backend is becoming a persistence layer. Here is what that architecture looks like."
 
 [taxonomies]
